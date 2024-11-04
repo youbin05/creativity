@@ -1,0 +1,801 @@
+@media screen and (max-width:768px){
+  html,body{
+    max-width: 468px;
+    height: 100%;
+  }
+  body::before{
+    max-width: 100%;
+    height: 100%;
+    /*! padding: 0 25px; */
+    background-size: cover;
+    background-position: left;
+}
+/*  헤더 영역  */
+  header{
+    width: calc(100% - 20px);
+    height: 80px;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    margin: 10px 0;
+}
+  header div.wrap h1{
+    grid-column: 1;
+    width: 140px;
+    height: 40px;
+  }
+/*  공통설정  */
+  section::before{
+    font-size: calc(50px * 0.7);
+}
+/*  header  */
+  header div.wrap{
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+  header div.wrap nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+  header div.wrap ul.gnb{
+  display: none;
+  }
+  header div.wrap ul.enb{
+    width: auto;
+    grid-column: 2;
+    padding: 10px;
+}
+  header div.wrap ul.enb li:first-child{
+   display: none;
+}
+  header div.wrap ul.enb li:nth-child(2) a{
+    background-image: url(../img/hem.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header div.wrap ul.enb li a{
+    
+  }
+/*  aside  */
+  aside.top{
+    display: none !important;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    font-size: calc(30px*0.4);
+    z-index: 2;
+    bottom: 30px;
+}
+  aside.top img{
+    width: 40px;
+    height: 25px;
+  }
+/*  title  */
+  #title{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+  }
+  #title div.wrap{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 70px 40px;
+    padding-bottom: 0;
+  }
+  #title > img{
+    display: none;
+  }
+  #title div.wrap img{
+    height: 60%;
+  }
+  #title div.wrap img.topline{
+    left: 35px;
+    top: 6px;
+  }
+  #title div.wrap img.bigcircle{
+    width: 80px;
+    right: 50px;
+    bottom: 250px;
+  }
+  #title div.wrap img.tinycircle{
+    left: 30px;
+    bottom: 230px;
+  }
+  #title div.wrap img.underline{
+    display: none;
+  }
+  #title div.wrap img.twinkle1{
+    width: 35px;
+    top: 25px;
+    right: 85px;
+  }
+  #title div.wrap img.twinkle2{
+    width: 45px;
+    top: 50px;
+    right: 50px;
+  }
+  #title div.wrap img.flower1{
+    width: 45px;
+    top: 20px;
+    left:30px;
+  }
+  #title div.wrap img.flower2{
+    
+  }
+  #title div.wrap img.title{
+    display: none;
+  }
+  #title div.wrap img.titlewomen{
+    display: none;
+  }
+  @keyframes width {
+  0% {
+    width:0;
+    height:1px
+  }
+  100% {
+    width: 400px;
+    height:1px
+  }
+}
+  #title div.wrap div.scroll{
+     display: none;
+  }
+  div#title div.wrap h2{
+    width: 100%;
+    line-height: 1.2;
+    font-size: calc(80px*0.6);
+    margin: 0;
+  }
+  div#title div.wrap h2 strong{
+    font-size: calc(45px*0.7);
+  }
+  #title div.wrap article{
+    display: none;
+  }
+  div#title div.wrap p{
+    width: 252px;
+    color: #333;
+    opacity: 0;
+    margin: 0;
+  }
+  #title div.img figure{
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+  #title div.img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+  #title div.img img{
+    width: 80%;
+    height: 550px;
+    left: 10%;
+    animation-delay: 0s;
+    border-radius: 15px;
+  }
+  #title div.img figure::after{
+    display: none;
+}
+/* proofile */
+  #profile{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  #profile div.pro {
+  grid-template-columns: auto;
+  grid-template-rows:repeat(4,auto);
+  gap:20px;
+  height:auto;
+  padding:50px;
+  position:relative
+}
+  #profile div.wrapT::before{
+    display: none;
+}
+  #profile::before{
+    left: -180px;
+    top: 290px;
+}
+  #profile div.wrap h2{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    margin: 0;
+    justify-self: left;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #profile div.wrap ul.intro li h3{
+    height: fit-content;
+    margin-bottom: 15px;
+}
+  #profile div.wrap ul.intro li p{
+  
+}
+  #profile div.wrap ul.intro li:not(:nth-of-type(1)) p{
+    width: 400px;
+    font-size: 13px;
+}
+  #profile div.wrap ul.intro li:nth-of-type(1) p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+}
+  #profile div.wrap ul.intro{
+    font-size: 15px;
+    grid-column: 1;
+    grid-row: 3;
+    width: calc(100% - 40px);
+}
+  #profile div.wrap ul.intro li{
+  flex-wrap: wrap;
+}
+  #profile div.wrap ul.info{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 4;
+}
+  #profile div.pro ul.intro li p{
+    line-height: 1.9;
+    font-size: calc(35px * 0.4);
+  }
+  #profile div.wrap ul.info li{
+    
+}
+  #profile div.wrap figure{
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  width: auto;
+  height: 300px;
+  justify-self: center;
+}
+  #profile div.wrap figure img{
+  width: auto;
+  height: 100%;
+  transform: rotate3d(0,0,0,0deg);
+  }
+  #profile div.pro > img.twinkle1{
+    left: 100px;
+  }
+  #profile div.pro > img.twinkle2{
+    left: 345px;
+     bottom: 750px;
+  }
+/*  skill  */
+  #skill{
+    width: 100%;
+    height: auto;
+}
+  #skill div.wrapT{
+    width: auto;
+    padding: 0 20px;
+    justify-content: center;
+    background-image: none;
+}
+  #skill div.wrapT h2{
+    
+}
+  #skill div.wrapT ul.list{
+    height: auto;
+    width: auto;
+}
+  #skill div.wrapT ul.list > li{
+    width: 100%;
+}
+  #skill div.wrapT ul.list > li h3{
+    line-height: 1.3;
+    margin: 30px 10px;
+  }
+  #skill div.wrapT ul.list > li:nth-child(1) h3{
+    width: 135px; 
+}
+  #skill div.wrapT ul.list > li:nth-child(2) h3{
+    width: 135px;
+}
+   #skill div.wrapT ul.list > li:nth-child(3) h3{
+    width: 80px;
+}
+  #skill div.wrapT ul.list > li:nth-child(5) h3{
+    width: 190px;
+    margin: 30px 0;
+}
+  #skill div.wrapT ul.list > li ul.sub{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  }
+  #skill div.wrapT ul.list > li:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+}
+  #skill div.wrapT ul.list > li:nth-child(1) ul.sub{ 
+  width: 200px;
+}
+  #skill div.wrapT ul.list > li:nth-child(2) ul.sub,
+  #skill div.wrapT ul.list > li:nth-child(5) ul.sub{
+    grid-template-columns: 1fr;
+}
+  #skill div.wrapT ul.list > li:nth-child(2) ul.sub{
+  grid-template-rows: 1fr 1fr;
+  margin: 0 0 0 50px;
+}
+  #skill div.wrapT ul.list > li:nth-child(4) ul.sub{
+  grid-template-rows: 1fr 1fr;
+    height: 350px;
+}
+  #skill div.wrapT ul.list > li:nth-child(5) ul.sub{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    column-gap: 0;
+    justify-items: center;
+}
+  #skill div.wrapT ul.list > li:nth-child(2){
+    grid-column: 1;
+    grid-row: 2;
+}
+  #skill div.wrapT ul.list > li:nth-child(3){
+    grid-column: 1;
+    grid-row: 3;
+}
+  #skill div.wrapT ul.list > li:nth-child(4){
+    grid-column: 1;
+    grid-row: 4;
+}
+  #skill div.wrapT ul.list > li:nth-child(5){
+    grid-column: 1;
+    grid-row: 5;
+}
+  #skill div.wrapT ul.list li:nth-child(1) > ul.sub li strong::after,
+   #skill div.wrapT ul.list li:nth-child(2) > ul.sub li strong::after{
+     width: 74px;
+     height: 94px;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+/*  skill slick  */
+  #skill div.slick-list{
+    width: auto;
+    height: 335px;
+}
+  #skill .slick-track{
+    
+  }
+  #skill .slick-track li{
+    width: auto !important;
+    height: 100%;
+  }
+  #skill div.wrapT ul.list li strong{
+    justify-content: center;
+  }
+  #skill div.wrapT ul.list li ul.sub{
+    
+  }
+  #skill div.wrapT ul.list .sbutton{
+    bottom: 0;
+}
+/*  portfolio  */
+  #portfolio{
+    width: 100%;
+    height: auto;
+  }
+  #portfolio div.wrapT{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  #portfolio div.wrapT h2{
+    
+  }
+  #portfolio div.wrapT p{
+    width: 375px;
+    font-size: calc(30px * 0.4);
+    line-height: 2;
+    text-align: left;
+  }
+  #portfolio div.wrapT div{
+    display: flex;
+    justify-content: center;
+    width: 400px !important;
+    height: 310px !important;
+  }
+/*  div.wimg  */
+  #portfolio div.wrapT div.wimg{
+  
+  }
+  #portfolio div.wrapT div.wimg figure{
+    width: 400px;
+  }
+  #portfolio div.wrapT div.wimg figure img{
+    width: 400px;
+    height: auto;
+  }
+  #portfolio div.wrapT div.wimg figure::before{
+    width: 100px;
+    left: 0;
+    bottom: 100px;
+}
+  #portfolio div.wrapT div.wimg figure img figcaption{
+    display: none;
+}
+  #portfolio div.wrapT ul.list > li > div{
+    width:  auto !important;
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(3,auto) !important;
+    row-gap: 40px;
+    padding: 0 20px;
+    margin-bottom: 150px;
+  }
+  #portfolio div.wrapT ul.list li > div::after{
+    display: none;
+  }
+  #profile div.pro ul.intro{
+    grid-column: 1;
+    grid-row: 4; 
+  }
+  #profile div.pro ul.intro li p img{
+    width: 24px; 
+  }
+  #profile h3.h4{
+    grid-row: 3;
+  }
+/*  div.wusb  */
+  #portfolio div.wrapT div.wsub{
+    width: 350px !important;
+}
+  #portfolio div.wrapT div.wsub div.draggable{
+    width: 350px !important;
+    height: 434px !important;
+}
+  #portfolio div.wrapT ul.list{
+    width: 100%;
+    height: auto;
+    gap: 80px;
+    background: #8d59ff1c;
+    padding: 40px 0;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+  }
+  #portfolio div.wrapT ul.list li figure{
+    width: 400px !important;
+    height: auto !important;
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    justify-self: center !important;
+  }
+  #portfolio div.wrapT ul.list li div.k2 figure::before{
+    content: "";
+    width: 100px;
+    height: 165px;
+    bottom: 355px;
+    right: 20px;
+  }
+  #portfolio div.wrapT ul.list li figure img{
+    width: 100%;
+  }
+  #portfolio div.wrapT ul.list > li h3{
+    margin-left: 0 !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    margin-left: 10px !important;
+  }
+  #portfolio div.wrapT ul.list > li{
+    margin-bottom: 100px;
+    width: 100%;
+}
+  #portfolio div.wrapT ul.list li ul.sub{
+    width: 300px;
+    height: auto;
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    left: calc(50% - 160px);
+    padding: 30px;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 2 !important;
+}
+  #portfolio div.wrapT ul.list:not(:first-child){
+}
+  #portfolio div.wrapT ul.list li ul.sub li{
+    font-size: calc(35px *0.4); 
+}
+  #portfolio div.wrapT ul.list li ul.sub li a{
+    width: 100px;
+    height: 55px !important;
+    margin: 20px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #333 !important;
+    color: #333 !important;
+    line-height: 1;
+}
+  #portfolio div.wrapT ul.list li ul.sub:nth-of-type(6) li{
+    
+}
+  #portfolio div.wrapT ul.list li ul.sub li strong{
+    width: auto;
+    height: 25px;
+}
+  #portfolio div.wrapT ul.list li ul.sub li ul{
+    
+}
+  #portfolio div.wrapT img.people{
+    display: none;
+  }
+/*  portfolio slick  */
+  #portfolio div.wrapT div.wimg{
+    width: 400px;
+}
+  #portfolio div.wrapT ul.sub{
+    width: 100% !important;
+}
+  #portfolio div.wrapT div.wbutton{
+    width: 150px !important;
+    height: 50px !important;
+    left: calc(50% - 90px);
+    bottom: -250px;
+}
+/*  learning archive  */
+  #learning{
+    width: 100%;
+    height: auto;
+}
+  #learning::before{
+    font-size: calc(50px * 0.7);
+}
+  #learning div.wrapT{
+  grid-template-columns: 400px;
+  grid-template-rows: repeat(4,auto);
+  row-gap: 40px;
+  width: 400px;
+  margin-bottom: 0;
+}
+  #learning div.wrapT h2{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    border: navajowhite;
+    border-bottom: 2px solid;
+  }
+  #learning div.wrapT p{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 30px;
+    font-size: calc(32px * 0.4);
+}
+  #learning div.wrapT h3{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #learning div.wrapT a{
+  grid-column: 1;
+  grid-row: 4;
+  margin-top: 30px;
+}
+  #learning div.wrapT ul{
+    width: 100% !important;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    font-size: calc(30px * 0.4);
+    justify-content: center;
+}
+  #learning div.wrapT ul li.list ul.prototype{
+    grid-column: 1;
+    grid-row: 1;
+}
+  #learning div.wrapT ul li.list ul.frontend{
+    grid-column: 1;
+    grid-row: 2;
+}
+  #learning div.wrapT ul li.list ul.service{
+    grid-column: 1;
+    grid-row: 3;
+}
+  #learning div.wrapT ul li.list ul.design{
+    grid-column: 1;
+    grid-row: 4;
+}
+  #learning div.wrapT ul li.list ul.smart{
+    grid-column: 1;
+    grid-row: 5;
+}
+  #learning div.wrapT ul li.list ul.projact{
+    grid-column: 1;
+    grid-row: 6;
+}
+  #learning div.wrapT ul li.list ul.work{
+    grid-column: 1;
+    grid-row: 7;
+}
+  #learning div.wrapT ul li.list ul.tools{
+    grid-column: 1;
+    grid-row: 8;
+}
+/*  learning slick  */
+  #learning .slick-track{
+    
+  margin-bottom: 30px;
+}
+  #learning .slick-list{
+    width: 400px;
+}
+  #learning .slick-initialized .slick-slide{
+    margin-right: 10px;
+}
+  #learning div.wrapT ul li{
+    width: auto !important;
+    height: auto !important;
+    font-size: calc(45px * 0.4) !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(8,auto) !important;
+}
+/*  contact  */
+  #contact{
+    width: auto;
+    height: auto;
+}
+  #contact div.wrapT{
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3 , auto);
+    row-gap: 40px;
+    padding-bottom: 80px;
+}
+  #contact div.wrapT h2{
+    height: fit-content;
+  }
+  #contact div.wrapT h3{
+    grid-column: 2;
+    grid-row: 3 / span 2;
+    width: auto;
+}
+  #contact div.wrapT p{
+    width: fit-content;
+    letter-spacing: -1px;
+}
+  #contact div.wrapT:nth-of-type(1) > p{
+    display: flex;
+    flex-direction: column;
+    width : fit-content;
+    font-size: calc(35px * 0.4);
+}
+  #contact div.wrapT div.sourcesite{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+  #contact div.wrapT ul.list{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #contact div.wrapT ul.src{
+    flex-wrap: wrap;
+    width: auto;
+    font-size: calc(35px * 0.4);
+  }
+  #contact div.wrapT div.sourcesite ul.src li{
+    height: fit-content;
+  }
+  #contact div.wrapT div.sourcesite ul.src li a{
+    margin-bottom: 0;
+  }
+  #contact div.wrapT a.QnA{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
+    text-align: center;
+    padding: 8px;
+  }
+  #contact div.wrapT ul.sns{
+    grid-column: 1;
+    grid-row: 5;
+    gap: 20px;
+    width: fit-content;
+}
+  #contact div.wrapT img{
+    display: none;
+}
+/*  footer  */
+  footer{
+    width: 100%;
+    height: auto;
+}
+  footer div.wrap{
+    width: auto;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 20px;
+    padding: 30px 20px;
+}
+  footer div.wrap h1{
+    width: 130px;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 8px;
+    margin: 0;
+}
+  footer div.wrap h1 a{
+  width: 100%;   
+}
+  footer div.wrap address{
+    width: 100%;
+    grid-column: 1;
+    grid-row: 3;
+}
+  footer div.wrap ul.sns{
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    gap: 40px;
+}
+  footer div.wrap ul.fnb{
+    grid-column: 1;
+    grid-row: 3;
+    gap: 20px;
+}
+  footer div.wrap ul.fnb li{
+    
+}
+  footer div.wrap ul.fnb li > a{
+    font-size: calc(35px* 0.4);
+}
+  footer div.wrap p{
+    grid-column: 1;
+    grid-row: 3;
+    font-size: calc(32px *0.4);
+    align-self: flex-end;
+}
+  footer div.wrap p.fin{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: flex-start;
+  }
+  footer div.wrap ul.img{
+    grid-column: 1;
+    grid-row: 2;
+}
+  footer div.wrap ul.img a{
+    font-size: 12px !important;
+  }
+/*  common  */
+  .wrap{
+    max-width: 460px;
+    padding: 0 20px;
+}
+  .h1{
+    font-size: calc(130px *0.4);
+    font-weight: 600;
+  }
+  .h2{
+    font-size: calc(100px *0.4);
+}
+  .h3{
+    font-size: calc(70px * 0.4)
+  }
+  .h4{
+    font-size: calc(50px *0.5);
+  }
+}
